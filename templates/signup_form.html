@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <title>User Signup</title>
+    <style>
+       .error {color:red}
+   </style>
+   <body>
+           <h1>User Signup</h1>
+               <form method="POST">
+                   <label>Username:
+                       <input type="text" name="username" value='{{username}}'>
+                   </label>
+                   <span class="error">{{username_error}}</span><br>
+                   <label>Password:
+                       <input type="password" name="password" value='{{password}}'>
+                   </label>
+                   <span class="error">{{password_error}}</span><br>
+                   <label>Verify Password:
+                       <input type="password" name="verify_password" value='{{verify_password}}'>
+                   </label>
+                   <span class="error">{{verify_password_error}}</span><br>
+                   <label>Email(optional):
+                       <input type="text" name="email" value='{{email}}'>
+                   </label>
+                   <span class="error">{{email_error}}</span><br>
+                   <input type="submit" value="Submit">
+               </form>
+        </body>
+</html>
